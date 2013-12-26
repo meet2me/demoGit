@@ -10,8 +10,16 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 *
 	 * @var string
 	 */
-	protected $table = 'users';
+	//protected $table = 'users';
+	protected $table = 'tblUser';
 
+	/**
+	* The database key used by the model.
+	*
+	* @var string
+	*/
+	protected $primaryKey = 'userID';
+	
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *
